@@ -1,0 +1,16 @@
+flowchart TD
+    A["NavItem C++ wrapper"] --> B["GetInterface()"]
+    B --> C{"Starboard API >= 12?"}
+    C -->|Yes| D["SbUiNavGetInterface()"]
+    D --> E{"Interface available?"}
+    E -->|Yes| F["Starboard function pointers"]
+    E -->|No| G["Fallback functions"]
+    C -->|No| G
+    F --> H["Native UI navigation operations"]
+    G --> I["Limited fallback behavior"]
+    A --> J["Pending update queue"]
+    J --> K["PerformQueuedUpdates()"]
+    K --> L["do_batch_update()"]
+    L --> M["ProcessPendingChanges()"]
+    M --> N["Queued closures in order"]
+    N --> O["Deferred focus request"]
