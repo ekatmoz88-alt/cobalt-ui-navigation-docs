@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Source-based technical documentation for Cobalt UI Navigation.">
+<title>Cobalt UI Navigation — Technical Documentation</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f5f7fb;color:#19243a;font:16px/1.65 system-ui,sans-serif}
+header{background:#172943;color:white;padding:55px 24px}
+header>div,main,footer{max-width:1050px;margin:auto}
+header p{max-width:720px;color:#d5dfef}
+.eyebrow{color:#a9c3ed;text-transform:uppercase;letter-spacing:2px;font-size:13px}
+h1{font-size:clamp(32px,5vw,52px);line-height:1.15;margin:12px 0}
+main{padding:35px 24px 60px}
+.intro{max-width:800px;color:#596579}
+h2{margin-top:35px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px}
+.card{display:block;background:white;border:1px solid #e0e6ef;border-radius:12px;padding:19px;color:inherit;text-decoration:none;transition:.15s}
+.card:hover{border-color:#3266c9;transform:translateY(-2px)}
+.card strong{display:block;color:#2458b5;font-size:18px}
+.card span{color:#657187;font-size:14px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.actions a{padding:10px 16px;border-radius:8px;background:#3266c9;color:white;text-decoration:none;font-weight:600}
+.actions a.secondary{background:white;color:#2458b5}
+.note{margin-top:30px;padding:16px;background:white;border-left:4px solid #9aaac2;color:#596579}
+footer{padding:0 24px 30px;color:#697589;font-size:14px}
+</style>
+</head>
+<body>
+<header><div>
+<div class="eyebrow">C++ component documentation</div>
+<h1>Cobalt UI Navigation</h1>
+<p>Source-based technical documentation covering architecture, native interfaces, navigation items, focus management, geometry, batch updates and compatibility.</p>
+<div class="actions">
+<a href="docs/architecture.md">Explore documentation</a>
+<a class="secondary" href="https://github.com/ekatmoz88-alt/cobalt-ui-navigation-docs">GitHub repository</a>
+</div>
+</div></header>
+<main>
+<p class="intro">This documentation describes the wrapper implementation and fallback behavior visible in the reviewed C++ source excerpts. Platform-specific behavior and guarantees are documented only where supported by the available evidence.</p>
+<h2>Documentation</h2>
+<div class="grid">
+<a class="card" href="docs/architecture.md"><strong>Architecture</strong><span>Component structure and execution paths</span></a>
+<a class="card" href="docs/native-interface.md"><strong>Native Interface</strong><span>Native types and function-pointer interface</span></a>
+<a class="card" href="docs/nav-item.md"><strong>Navigation Item</strong><span>NavItem lifecycle and method reference</span></a>
+<a class="card" href="docs/focus-management.md"><strong>Focus Management</strong><span>Focus requests and callback handling</span></a>
+<a class="card" href="docs/containers-and-geometry.md"><strong>Containers and Geometry</strong><span>Containers, windows, size, transforms and offsets</span></a>
+<a class="card" href="docs/batch-updates.md"><strong>Batch Updates</strong><span>Queued operations and update processing</span></a>
+<a class="card" href="docs/compatibility.md"><strong>Compatibility</strong><span>API version guards and fallback behavior</span></a>
+<a class="card" href="references/source-evidence.md"><strong>Source Evidence</strong><span>Evidence map and documentation boundaries</span></a>
+<a class="card" href="diagrams/architecture.mmd"><strong>Architecture Diagram</strong><span>Mermaid diagram source</span></a>
+</div>
+<div class="note"><strong>Scope:</strong> This repository documents the supplied source excerpts, not the complete Cobalt runtime. Platform-specific navigation algorithms, threading guarantees and coordinate conventions are not inferred where the reviewed sources do not establish them.</div>
+</main>
+<footer>Technical documentation portfolio sample · <a href="README.md">Repository README</a></footer>
+</body>
+</html>
