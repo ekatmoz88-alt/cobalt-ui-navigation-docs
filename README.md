@@ -1,5 +1,7 @@
 # Cobalt UI Navigation
 
+[English](README.md) | [Русский](README.ru.md)
+
 [**Open the documentation website →**](https://ekatmoz88-alt.github.io/cobalt-ui-navigation-docs/)
 
 Source-based technical documentation for the Cobalt UI Navigation C++ component.
