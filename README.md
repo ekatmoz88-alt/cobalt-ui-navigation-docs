@@ -47,3 +47,8 @@ Platform-specific behavior, threading guarantees, coordinate units, transform co
 ## Publication note
 
 Before publishing, verify that the source material and all derived documentation are authorized for public distribution. Do not include proprietary source code, credentials, personal data or confidential platform details.
+
+
+## Tags
+
+`cpp` · `ui-navigation` · `component-architecture` · `api-reference` · `source-analysis`
